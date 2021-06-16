@@ -16,15 +16,17 @@
 <body>
 <h1>Testing JSP</h1>
 <p>
+    <%--    directive for importing java libraries and so on--%>
+    <%@ page import="java.util.Date, logic.TestClass" %>
     <%--    Java code without String output on screen--%>
     <%
-        //    java.util.Date currentDate = new java.util.Date();
-        //    String string = "Текущая дата " + currentDate;
         for (int i = 0; i < 10; i++)
-            out.println("<p>Hello World " + i+"</p>");
+            out.println("<p>Hello World " + i + "</p>");
+        TestClass testClass = new TestClass();
+        String currentDate = new Date().toString();
     %>
     <%--    Java code with String output on screen--%>
-    <%--    <%= string%>--%>
+    <%= testClass.getInfo()%>
 </p>
 
 </body>
