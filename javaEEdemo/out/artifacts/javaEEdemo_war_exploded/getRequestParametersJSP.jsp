@@ -14,9 +14,9 @@
     <h1>Testing get request parameters</h1>
     <p>
         <%
-            String name = request.getParameter("name");
+            String key = request.getParameter("name");
         %>
-        <%= "Hello, "+name%>
+        <%= "Hello, user "+key%>
     </p>
 
 </body>

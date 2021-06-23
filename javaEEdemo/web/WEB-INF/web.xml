@@ -10,8 +10,31 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
-        <url-pattern>/hello-world</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
+
+
+    <!--    mapping for redirect testing servlet-->
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RedirectServlet</servlet-name>
+        <url-pattern>/redirect-test</url-pattern>
+    </servlet-mapping>
+
+
+    <!--    mapping for forward testing servlet-->
+    <servlet>
+        <servlet-name>ForwardServlet</servlet-name>
+        <servlet-class>ForwardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForwardServlet</servlet-name>
+        <url-pattern>/forward-test</url-pattern>
+    </servlet-mapping>
+
 
     <!--mapping for jsp file which converts to servlet-->
     <servlet>
@@ -23,6 +46,7 @@
         <url-pattern>/hello-world-jsp</url-pattern>
     </servlet-mapping>
 
+
     <servlet>
         <servlet-name>getRequestParameters</servlet-name>
         <jsp-file>/getRequestParametersJSP.jsp</jsp-file>
@@ -31,4 +55,5 @@
         <servlet-name>getRequestParameters</servlet-name>
         <url-pattern>/get-request-jsp</url-pattern>
     </servlet-mapping>
+
 </web-app>
