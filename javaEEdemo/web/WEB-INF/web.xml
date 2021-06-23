@@ -22,4 +22,13 @@
         <servlet-name>firstJSP</servlet-name>
         <url-pattern>/hello-world-jsp</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getRequestParameters</servlet-name>
+        <jsp-file>/getRequestParametersJSP.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getRequestParameters</servlet-name>
+        <url-pattern>/get-request-jsp</url-pattern>
+    </servlet-mapping>
 </web-app>
