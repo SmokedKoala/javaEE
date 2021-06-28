@@ -5,6 +5,10 @@ import jakarta.servlet.annotation.*;
 import java.io.IOException;
 
 @WebServlet(name = "ForwardServlet", value = "/ForwardServlet")
+/**
+ * Servlet for testing forward.
+ * is followed by URL "localhost:8080/javaEEdemo_war_exploded/forward-test"
+ */
 public class ForwardServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
